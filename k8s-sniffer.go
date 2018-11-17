@@ -31,7 +31,7 @@ func main() {
 	}
 	clientSet, err := kubernetes.NewForConfig(cfg)
 	if err != nil {
-		log.Printf("Error creatinga new client: %s", err)
+		log.Printf("Error creating a new client: %s", err)
 		os.Exit(1)
 	}
 	api := clientSet.CoreV1()
